@@ -3,11 +3,12 @@
 
 .container-carousel{
     display: flex;
+    overflow: hidden;
 }
 
 .container-carousel .carousel{
     min-height: 100vh;
-    width: 100vw;
+    min-width: 100vw;
     position: relative;
 }
 
@@ -93,7 +94,7 @@
 
 .container-carousel .avancar{
     height: 6.5rem;
-    position: absolute;
+    position: fixed;
     top: 50%;
     right: 0%;
     transform: translate(0%,-50%);
@@ -102,7 +103,7 @@
 
 .container-carousel .voltar{
     height: 6.5rem;
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 0%;
     transform: translate(0%,-50%) rotate(180deg);
