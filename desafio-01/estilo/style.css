@@ -1,0 +1,110 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+.container-carousel{
+    display: flex;
+}
+
+.container-carousel .carousel{
+    min-height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+.container-carousel .carousel.fundo-rosas{
+    background-image: url(../estilo/imagens/4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-carousel .carousel.fundo-rosas-amarela{
+    background-image: url(../estilo/imagens/1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-carousel .carousel.fundo-motanhas{
+    background-image: url(../estilo/imagens/3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-carousel .carousel.fundo-lago{
+    background-image: url(../estilo/imagens/2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-carousel .carousel .texto{
+    background: #fff;
+    max-width: 45rem;
+    height: 50rem;
+    position: absolute;
+    left: 25%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: .5rem;
+    padding: 3.7rem;
+}
+
+.container-carousel .carousel .texto .titulo{
+    font-weight: 400;
+    font-size: 3.5rem;
+}
+
+.container-carousel .carousel .texto .paragrafo{
+    font-size: 1.7rem;
+    font-weight: 300;
+    line-height: 1.7;
+    margin: 3rem 0;
+}
+
+.container-carousel .carousel .texto .botao-vermelho{
+    color: #C50000;
+    font-size: 2.5rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.container-carousel .carousel .texto .botao-amarelo{
+    color:#D9DD10;
+    font-size: 2.5rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.container-carousel .carousel .texto .botao-marrom{
+    color: #A63A17;;
+    font-size: 2.5rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.container-carousel .carousel .texto .botao-azul{
+    color: #10ACDD;
+    font-size: 2.5rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.container-carousel .avancar{
+    height: 6.5rem;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(0%,-50%);
+    cursor: pointer;
+}
+
+.container-carousel .voltar{
+    height: 6.5rem;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%,-50%) rotate(180deg);
+    cursor: pointer;
+}
