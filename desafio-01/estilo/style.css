@@ -3,13 +3,14 @@
 
 .container-carousel{
     display: flex;
-    overflow: hidden;
 }
 
 .container-carousel .carousel{
     min-height: 100vh;
     min-width: 100vw;
     position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .container-carousel .carousel.fundo-rosas{
@@ -43,13 +44,9 @@
 .container-carousel .carousel .texto{
     background: #fff;
     max-width: 45rem;
-    height: 50rem;
-    position: absolute;
-    left: 25%;
-    top: 50%;
-    transform: translate(-50%,-50%);
     border-radius: .5rem;
     padding: 3.7rem;
+    margin-left: 150px;
 }
 
 .container-carousel .carousel .texto .titulo{
@@ -99,6 +96,7 @@
     right: 0%;
     transform: translate(0%,-50%);
     cursor: pointer;
+    z-index: 99;
 }
 
 .container-carousel .voltar{
@@ -108,4 +106,68 @@
     left: 0%;
     transform: translate(0%,-50%) rotate(180deg);
     cursor: pointer;
+    z-index: 99;
+}
+
+@media(max-width:768px){
+    .container-carousel .carousel{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container-carousel .carousel .texto{
+        max-width: 38rem;
+        margin: 0;
+        padding: 2.5rem;
+    }
+
+    .container-carousel .carousel .texto .titulo{
+        font-size: 3rem;
+    }
+
+    .container-carousel .carousel .texto .paragrafo{
+        margin: 1rem;
+        font-size: 1.4rem;
+    }
+}
+
+@media(max-width:520px){
+    .container-carousel .carousel .texto{
+        max-width: 30rem;
+        margin: 0;
+        padding: 2.5rem;
+    }
+}
+
+@media(max-width:425px){
+
+    .container-carousel .carousel .texto{
+        padding: 2rem;
+    }
+
+    .container-carousel .carousel .texto .titulo{
+        font-size: 2.5rem;
+    }
+
+    .container-carousel .carousel .texto .paragrafo{
+        margin: .5rem;
+        font-size: 1.4rem;
+    }
+
+    .container-carousel .avancar{
+        height: 4.5rem;
+    }
+    
+    .container-carousel .voltar{
+        height: 4.5rem;
+    }
+}
+
+@media(max-width:375px){
+    .container-carousel .carousel .texto{
+        max-width: 25rem;
+        margin: 0;
+        padding: 2rem;
+    }
 }
