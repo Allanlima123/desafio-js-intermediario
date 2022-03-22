@@ -9,8 +9,12 @@
     min-height: 100vh;
     min-width: 100vw;
     position: relative;
-    display: flex;
-    align-items: center;
+    display: none;
+    padding-top: 100px;
+}
+
+.container-carousel .carousel.ativa{
+    display: block;
 }
 
 .container-carousel .carousel.fundo-rosas{
@@ -110,7 +114,7 @@
 }
 
 @media(max-width:768px){
-    .container-carousel .carousel{
+    .container-carousel .carousel.ativa{
         display: flex;
         align-items: center;
         justify-content: center;
