@@ -1,16 +1,20 @@
-let accordeons = document.querySelectorAll(".accordeon");
-// console.log(accordeons)
-let abrirAccordeon = document.querySelectorAll('.resposta');
-// console.log(abrirAccordeon)
+let perguntas = document.querySelectorAll(".pergunta");
+// console.log(perguntas)
+let imagemSeta = document.querySelectorAll('#fechado');
+console.log(imagemSeta)
+let respostas = document.querySelectorAll('.resposta');
+// console.log(respostas)
 
-accordeons.forEach(accordeon =>{
-    accordeon.addEventListener("click",()=>{
-        abrirAccordeon.forEach(abrir =>{
-            abrir.classList.remove('abrir');
-        })
-        accordeon.classList.add('abrir');
+perguntas.forEach(pergunta =>{
+    pergunta.addEventListener('click', () =>{
+        pergunta.classList.add('abrir');
     });
+
+    if(pergunta.classList.contains('abrir')){
+        imagemSeta.forEach = "src/imagem/seta-colorida.png"
+    }
 });
+
 
 
 

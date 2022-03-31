@@ -19,6 +19,19 @@
 .principal .container-formulario .descricao{
     flex: 0 1 510px;
     padding: 20px 0;
+    opacity: 0;
+    overflow: hidden;
+    animation: moveBanner 2s .5s forwards;
+}
+
+@keyframes moveBanner{
+    0%{
+        transform: translateY(10rem) rotateY(-30deg);
+    }
+    100%{
+        transform: translateY(0) rotateY(0deg);
+        opacity: 1;
+    }
 }
 
 .principal .container-formulario .descricao .titulo{
@@ -37,6 +50,7 @@
     color: #fff;
     font-weight: 400;
     line-height: 1.4;
+    animation: moveBanner 2s .7s forwards;
 }
 
 .principal .container-formulario .formulario{
